@@ -1,0 +1,5 @@
+
+    public function {{ methodName }}(authUser $authUser): bool
+    {
+        return $this->checkOwnership($authUser, '{{ permission }}');
+    }

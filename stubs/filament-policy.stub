@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use {{ MODEL_USER }} as authUser;
+use {{ MODEL_NAMESPACE }};
+use Illuminate\Auth\Access\Response;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use App\Policies\Traits\HasRecordRules;
+
+class {{ MODEL_NAME }}Policy
+{
+    use HandlesAuthorization, HasRecordRules;
+    {{ POLICY_METHODS }}
+}

@@ -1,0 +1,13 @@
+<?php
+
+use Illuminate\Foundation\Inspiring;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
+
+Artisan::command('inspire', function () {
+    $this->comment(Inspiring::quote());
+})->purpose('Display an inspiring quote');
+
+Schedule::command('storage:clean-orphans')->dailyAt('02:00');
+Schedule::command('subscriptions:auto-renew')->dailyAt('00:05');
+Schedule::command('payroll:auto-generate')->monthlyOn(28, '23:00');

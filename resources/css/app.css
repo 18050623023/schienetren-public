@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@config "../../tailwind.config.js";
+@source "../../resources";
+@source "../../app";
+@source "../../vendor/filament";
+@source '../../../../vendor/saade/filament-autograph/resources/views/**/*.blade.php';
+
+/* @source '../../../../vendor/emmanpbarrameda/filament-take-picture-field/resources/views*.blade.php'; */
